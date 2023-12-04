@@ -1,0 +1,193 @@
+.swiper-slide img {
+    width: 100%;
+}
+
+.carrossel__titulo {
+    background-color: var(--cor-fundo-header);
+    padding-top: 20px;
+    padding-bottom: 8px;
+    text-align: center;
+    color: var(--cor-de-destaque);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.swiper {
+    position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.card {
+    border-radius: 10px;
+    background: var(--cor-fundo-header);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    padding: 16px 16px 24px 16px;
+}
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__descricao img {
+    max-width: 188px;
+    max-height: 188px;
+}
+
+.descricao__titulo {
+    color: var(--cor-de-destaque);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 8px 0;
+}
+
+.descricao__titulo-livro {
+    color: var(--cor-titulo);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 8px 0;
+}
+
+.descricao__texto {
+    color: var(--cor-texto);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card__botoes {
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 24px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    padding: 8px;
+}
+
+.botao__ancora {
+    background-color: var(--cor-de-destaque);
+    color: var(--cor-fundo-header);
+    padding: 12px 34px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+/*************  TABLET **************************************************/
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        padding-top: 40px;
+        padding-bottom: 16px;
+        font-size: 26px;
+    }
+
+    .swiper {
+        width: 725px;
+        padding-top: 32px;
+    }
+
+    .swiper-wrapper {
+        max-width: 725px;
+        padding-top: 60px;
+        display: flex;
+        width: 725px;
+        height: 388px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+    }
+
+    .swiper-pagination {
+        margin: 0;
+    }
+
+    .card {
+        max-width: 588px;
+        max-height: 266px;
+        margin-inline: auto;
+        margin-bottom: 48px;
+        
+    }
+
+    .descricao__texto {
+        max-width: 318px;
+    }
+
+    .botoes {
+        gap: 12px;
+        padding: 8px 8px 8px 0px
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel {
+        padding-inline: 0;
+    }
+
+    .carrossel__container {
+        display: flex;
+        margin-inline: 174px;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 0;
+        gap: 84px;
+    }
+
+    .card {
+        margin: 0 auto 0 0;
+        width: 588px;
+        height: 278px;
+    }
+    .swiper-wrapper{
+        .swiper-pagination {
+            margin-top: 0;
+        }
+    }
+    .swiper-wrapper {
+        padding-top: 40px;
+        margin-bottom: 0px; 
+    }
+    .swiper {
+        width: 670px;
+        padding-top: 74px;
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+}

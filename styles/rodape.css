@@ -1,0 +1,84 @@
+hr {
+    margin: 0;
+    background-color: rgba(133, 133, 133, 1);
+    height: 1px;
+    border: 0;
+}
+
+.rodape {
+    background-color: rgba(249, 249, 249, 1);
+    padding: 17px 0 24px 24px;
+}
+
+.rodape__titulo {
+    font-style: normal;
+    line-height: normal;
+    color: black;
+}
+
+.indicacoes {
+    display: none;
+}
+
+/*************  TABLET **************************************************/
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        padding: 56px 49px 70px 24px;
+        gap: 106px;
+        justify-content: center;
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+        width: 160px;
+        text-align: initial;
+    }
+
+    .rodape__titulos {
+        color: var(--rodape-titulo);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .rodape__lista__item a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--rodape-nome);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        gap: 7px;
+        margin-bottom: 16px;
+    }
+
+    .indicacoes {
+        display: flex;
+        flex-direction: row;
+        gap: 61px;
+    }
+
+    .rodape__indicacoes {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+
+}
+@media screen and (min-width: 1728px){
+    .rodape {
+        gap: 121px;
+    }
+    .rodape__indicacoes{
+        border-left: 1px solid var(--rodape-titulo);
+        padding-left: 20px;
+    }
+    .indicacoes {
+        gap: 208px;
+    }
+}

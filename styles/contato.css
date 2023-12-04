@@ -1,0 +1,95 @@
+.contato {
+    background-color: var(--cor-fundo-header);
+    box-shadow: 8px 8px 64px 8px rgba(0, 0, 0, 0.25);
+    padding: 24px 24px 30px 24px;
+}
+.contato__texto, .contato__titulo, .contato__pesquisa, .contato__pesquisa input{
+    background: var(--cor-fundo-banner, linear-gradient(98deg, #002F52 35.49%, #326589 165.37%));
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contato__texto {
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.contato__pesquisa {
+    display: flex;
+    height: 44px;
+    max-width: 380px;
+    padding: 0 24px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: 1px solid #002F52;
+    justify-content: left;
+    border-radius: 24px;
+}
+
+.contato__pesquisa input {
+    /*RESET*/
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border: none;
+   outline: none;
+   /*fonte*/
+   font-style: normal;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: normal; 
+
+}
+
+.contato__pesquisa input::placeholder {
+    opacity: 1;
+}
+
+@media screen and (min-width: 1024px){
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 149px 51px 149px;
+    gap: 22px;
+}
+.contato__titulo{
+    max-width: 376px;
+        font-size: 24px;
+    margin-bottom: 19px;
+    }
+    .contato__texto {
+        margin-bottom: 0;
+        max-width: 353px;
+    }
+    .contato__pesquisa {
+        min-width: 326px;
+    }
+}
+@media screen and (min-width: 1728px){
+    .contato__titulo{
+        max-width: 411px;
+        margin-bottom: 4px;
+    }
+    .contato {
+        gap: 24px ;
+        padding: 64px 480px;
+    }
+    .contato__pesquisa {
+        min-width: 349px;
+    }
+}
